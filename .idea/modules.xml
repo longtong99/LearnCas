@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LearnCas.iml" filepath="$PROJECT_DIR$/.idea/LearnCas.iml" />
       <module fileurl="file://$PROJECT_DIR$/baseserver/baseserver.iml" filepath="$PROJECT_DIR$/baseserver/baseserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc-server/jdbc-server.iml" filepath="$PROJECT_DIR$/jdbc-server/jdbc-server.iml" />
     </modules>
   </component>
 </project>
