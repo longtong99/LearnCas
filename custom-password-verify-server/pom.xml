@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zzl.cas</groupId>
-    <artifactId>jdbc-server</artifactId>
+    <artifactId>custom-password-verify-server</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -69,76 +69,10 @@
             <version>${cas.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-core-webflow</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-core-webflow-api</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-        <!-- 自定义认证的方式 begin -->
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-core-webflow</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-core-authentication</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-core-authentication-api</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-webapp-config</artifactId>
-            <version>${cas.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <!--连接池  -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.28</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-generic</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
-        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.36</version>
         </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-        </dependency>
-        <!--<dependency>
-            <groupId>org.jasig.cas</groupId>
-            <artifactId>cas-server-core-authentication</artifactId>
-            <version>4.2.7</version>
-        </dependency>-->
-        <!--<dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-core-util</artifactId>
-            <version>${cas.version}</version>
-        </dependency>-->
-        <!-- shiro -->
-        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
     </dependencies>
 
     <properties>
