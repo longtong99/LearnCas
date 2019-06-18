@@ -54,6 +54,7 @@ public class ShiroAuthenticationConfiguration implements AuthenticationEventExec
 
     /**
      * Spring静态注入
+     * 因为shiro也有登出、鉴权之类的接口，和cas的冲突，所以这里需要设置下，不然会报错，我们只用shiro的登陆鉴权，其他的不用
      * @return
      */
     @Bean
@@ -64,13 +65,21 @@ public class ShiroAuthenticationConfiguration implements AuthenticationEventExec
         return factoryBean;
     }
 
-
+    /**
+     * 将自定义验证器注册到spring
+     * @return
+     */
     @Bean
     public AuthenticationHandler shiroAuthenticationHandler() {
         MyShiroAuthenticationHandler handler = new MyShiroAuthenticationHandler(MyShiroAuthenticationHandler.class.getSimpleName(), servicesManager, new DefaultPrincipalFactory(),10);
         return handler;
     }
-
+    /**
+     * 把自定义验证器注册到cas的验证authenticationHandlers
+     * cas在验证的时候会把authenticationHandlers里面的所有验证都验证一遍，只要有一个满足的就通过
+     * 例如前面提到的用盐值加密的方式验证以及用MD5的方式同时验证，有一个满足的就通过
+     * @param plan
+     */
     @Override
     public void configureAuthenticationExecutionPlan(AuthenticationEventExecutionPlan plan) {
         // TODO Auto-generated method stub
