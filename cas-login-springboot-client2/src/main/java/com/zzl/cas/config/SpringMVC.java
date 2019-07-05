@@ -13,7 +13,7 @@ import java.util.List;
  * 等价于之前的SpringMVC.xml 
  * 可以在此配置拦截器,过滤器,监听器
  * 配置静态文件映射
- * @author xiyan
+ * @author zzl
  *
  */
 @Configuration

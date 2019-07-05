@@ -11,7 +11,7 @@ import java.sql.SQLException;
 /**
  * 相当于之前的ApplicationContext-Dao.xml
  * 配置数据源,使用阿里Druid数据源
- * @author xiyan
+ * @author zzl
  *
  */
 @Configuration
