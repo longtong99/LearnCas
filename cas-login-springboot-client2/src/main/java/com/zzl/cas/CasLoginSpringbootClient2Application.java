@@ -1,6 +1,7 @@
 package com.zzl.cas;
 
-import net.unicon.cas.client.configuration.EnableCasClient;
+//import net.unicon.cas.client.configuration.EnableCasClient;
+import com.zzl.cas.client.configuration.EnableCasClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

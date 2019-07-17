@@ -67,7 +67,7 @@
 			<version>1.0.28</version>
 		</dependency>
 		<!--cas的客户端 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>net.unicon.cas</groupId>
 			<artifactId>cas-client-autoconfig-support</artifactId>
 			<version>1.4.0-GA</version>
@@ -82,6 +82,11 @@
 			<groupId>org.jasig.cas.client</groupId>
 			<artifactId>cas-client-core</artifactId>
 			<version>${java.cas.client.version}</version>
+		</dependency>-->
+		<dependency>
+			<groupId>com.zzl.cas</groupId>
+			<artifactId>cas-client-spring-boot-starter</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<!-- Spring AOP -->
 		<dependency>

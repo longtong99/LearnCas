@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author: wangsaichao
+ * @author: zzl
  * @date: 2018/8/2
  * @description: 配置默认跳转路径
  */
